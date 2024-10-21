@@ -43,8 +43,8 @@ return {
                 bold = true,
             }
 
-            highlights.CursorLine = { bg = colors.bg_highlight }
-            -- highlights.CursorLine = { bg = colors.none } -- disable cursorline highlight
+            -- highlights.CursorLine = { bg = colors.bg_highlight }
+            highlights.CursorLine = { bg = colors.none } -- disable cursorline highlight
         end,
     },
 }
