@@ -3,6 +3,7 @@ return {
 
     opts = {
         backends = { "treesitter", "lsp", "markdown", "asciidoc", "man", "quarto" },
+
         layout = {
             default_direction = "float",
             -- max_width = { 40, 0.2 },
