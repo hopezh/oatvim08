@@ -23,7 +23,7 @@ opt.undofile = false -- stop unlimited undo to even changes made in previous ses
 
 -- blinking cursor -------------------------------------------------------------
 opt.guicursor =
-  "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175"
+    "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175"
 
 -- no swap file ----------------------------------------------------------------
 vim.cmd("set noswapfile")
@@ -42,3 +42,18 @@ vim.scriptencoding = "utf-8"
 --  * enables nerd font icons
 -- Set to false to disable.
 vim.g.lazygit_config = false
+
+-- make toggleterm work with powershell ----------------------------------------
+-- ref: https://github.com/akinsho/toggleterm.nvim/wiki/Tips-and-Tricks#using-toggleterm-with-powershell
+local powershell_options = {
+    shell = vim.fn.executable("pwsh") == 1 and "pwsh" or "powershell",
+    shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;",
+    shellredir = "-RedirectStandardOutput %s -NoNewWindow -Wait",
+    shellpipe = "2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode",
+    shellquote = "",
+    shellxquote = "",
+}
+
+for option, value in pairs(powershell_options) do
+    vim.opt[option] = value
+end

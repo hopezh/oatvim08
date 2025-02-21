@@ -27,9 +27,9 @@ return {
             end
         end,
 
-        direction = "float",
+        -- direction = "float",
         -- direction = "horizontal",
-        -- direction = "vertical",
+        direction = "vertical",
         -- direction = "tab",
         shade_filetypes = {},
         ide_numbers = true,
