@@ -7,7 +7,7 @@ return {
 
         -- Enable this to disable setting the background color
         -- ! when enabled, need to provide background_colour="#000000" for nvim-notify
-        transparent = false,
+        transparent = true,
         terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovimi
 
         styles = {
@@ -43,8 +43,8 @@ return {
                 bold = true,
             }
 
-            -- highlights.CursorLine = { bg = colors.bg_highlight }
-            highlights.CursorLine = { bg = colors.none } -- disable cursorline highlight
+            highlights.CursorLine = { bg = colors.bg_highlight }
+            -- highlights.CursorLine = { bg = colors.none } -- disable cursorline highlight
         end,
     },
 }
