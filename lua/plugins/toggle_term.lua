@@ -23,7 +23,8 @@ return {
             if term.direction == "horizontal" then
                 return 20
             elseif term.direction == "vertical" then
-                return vim.o.columns * 0.5
+                return vim.o.columns * 0.3
+                -- return 80
             end
         end,
 
@@ -31,6 +32,7 @@ return {
         -- direction = "horizontal",
         direction = "vertical",
         -- direction = "tab",
+
         shade_filetypes = {},
         ide_numbers = true,
         insert_mappings = true,
