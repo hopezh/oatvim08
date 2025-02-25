@@ -15,36 +15,66 @@ return {
         },
     },
 
-    opts = {
-        open_mapping = [[<F3>]],
+    -- add keymap to use <C-h>/<C-l> to move btw terminal and editor
+    -- based on suggestion of perplexity
+    config = function()
+        require("toggleterm").setup({
+            direction = "vertical", -- vertical, horizontal, float, tab
 
-        -- size can be a number or function which is passed the current terminal
-        size = function(term)
-            if term.direction == "horizontal" then
-                return 20
-            elseif term.direction == "vertical" then
-                return vim.o.columns * 0.4
-                -- return 80
-            end
-        end,
+            size = function(term)
+                if term.direction == "horizontal" then
+                    return 20
+                elseif term.direction == "vertical" then
+                    return vim.o.columns * 0.4
+                    -- return 80
+                end
+            end,
 
-        -- direction = "float",
-        -- direction = "horizontal",
-        direction = "vertical",
-        -- direction = "tab",
+            open_mapping = [[<F3>]],
+        })
 
-        shade_filetypes = {},
-        ide_numbers = true,
-        insert_mappings = true,
-        terminal_mappings = true,
-        start_in_insert = true,
-        close_on_exit = true,
+        function _G.set_terminal_keymaps()
+            local opts = { buffer = 0 }
+            vim.keymap.set("t", "<C-h>", [[<C-\><C-n><C-W>h]], opts)
+            vim.keymap.set("t", "<C-l>", [[<C-\><C-n><C-W>l]], opts)
+        end
 
-        float_opts = {
-            border = "curved",
-            -- border = "shadow",
-            -- width = 100,
-            -- height = 100,
-        },
-    },
+        vim.cmd("autocmd! TermOpen term://* lua set_terminal_keymaps()")
+
+        vim.api.nvim_set_keymap("n", "<C-h>", "<C-W>h", { noremap = true, silent = true })
+        vim.api.nvim_set_keymap("n", "<C-l>", "<C-W>l", { noremap = true, silent = true })
+    end,
+
+    -- opts = {
+    --     open_mapping = [[<F3>]],
+    --
+    --     -- size can be a number or function which is passed the current terminal
+    --     size = function(term)
+    --         if term.direction == "horizontal" then
+    --             return 20
+    --         elseif term.direction == "vertical" then
+    --             return vim.o.columns * 0.4
+    --             -- return 80
+    --         end
+    --     end,
+    --
+    --     -- direction = "float",
+    --     -- direction = "horizontal",
+    --     direction = "vertical",
+    --     -- direction = "tab",
+    --
+    --     shade_filetypes = {},
+    --     ide_numbers = true,
+    --     insert_mappings = true,
+    --     terminal_mappings = true,
+    --     start_in_insert = true,
+    --     close_on_exit = true,
+    --
+    --     float_opts = {
+    --         border = "curved",
+    --         -- border = "shadow",
+    --         -- width = 100,
+    --         -- height = 100,
+    --     },
+    -- },
 }
