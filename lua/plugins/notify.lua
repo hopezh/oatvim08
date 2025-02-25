@@ -1,5 +1,6 @@
 return {
     "rcarriga/nvim-notify",
+    enabled = false,
 
     opts = {
         -- when using transparent in tokyonight, need to set a bg color here
