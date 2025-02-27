@@ -10,15 +10,16 @@ return {
         --     desc = "show oat in this project",
         -- },
         {
-            "<leader>cor",
-            "<cmd>Trouble todo toggle<cr>",
-            -- "<cmd>Trouble todo toggle keywords=oat<cr>",
-            desc = "show oat in Trouble",
+            "<leader>zor",
+            -- "<cmd>Trouble todo toggle<cr>",
+            "<cmd>Trouble todo toggle keywords=o<cr>",
+            desc = "show oat cmt in Trouble",
         },
         {
-            "<leader>cot",
-            "<cmd>TodoTelescope keywords=oat<cr>",
-            desc = "show oat in Telescope",
+            "<leader>zot",
+            -- "<cmd>TodoTelescope<cr>",
+            "<cmd>TodoTelescope keywords=o<cr>",
+            desc = "show oat cmt in Telescope",
         },
     },
 

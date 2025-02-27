@@ -2,6 +2,7 @@
   "extras": [
     "lazyvim.plugins.extras.editor.aerial",
     "lazyvim.plugins.extras.editor.mini-files",
+    "lazyvim.plugins.extras.editor.telescope",
     "lazyvim.plugins.extras.lang.json",
     "lazyvim.plugins.extras.ui.dashboard-nvim"
   ],
