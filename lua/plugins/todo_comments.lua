@@ -26,9 +26,15 @@ return {
 
         -- From lazyvim v14 fzf-lua replaced telescope
         {
-            "<leader>zo",
-            "<cmd>TodoFzfLua keywords=o<cr>",
+            "<leader>zof",
+            "<cmd>TodoFzfLua keywords=oo<cr>",
             desc = "show oat cmt in FzfLua",
+        },
+
+        {
+            "<leader>zot",
+            "<cmd>TodoTrouble keywords=oo<cr>",
+            desc = "show oat cmt in Trouble",
         },
     },
 
