@@ -9,17 +9,32 @@ return {
         --     "<cmd>TodoLocList keywords=oat<cr>",
         --     desc = "show oat in this project",
         -- },
+
+        -- {
+        --     "<leader>zor",
+        --     -- "<cmd>Trouble todo toggle<cr>",
+        --     "<cmd>Trouble todo toggle keywords=o<cr>",
+        --     desc = "show oat cmt in Trouble",
+        -- },
+
+        -- {
+        --     "<leader>zot",
+        --     -- "<cmd>TodoTelescope<cr>",
+        --     "<cmd>TodoTelescope keywords=o<cr>",
+        --     desc = "show oat cmt in Telescope",
+        -- },
+
+        -- From lazyvim v14 fzf-lua replaced telescope
         {
-            "<leader>zor",
-            -- "<cmd>Trouble todo toggle<cr>",
-            "<cmd>Trouble todo toggle keywords=o<cr>",
-            desc = "show oat cmt in Trouble",
+            "<leader>zof",
+            "<cmd>TodoFzfLua keywords=oo<cr>",
+            desc = "show oat cmt in FzfLua",
         },
+
         {
             "<leader>zot",
-            -- "<cmd>TodoTelescope<cr>",
-            "<cmd>TodoTelescope keywords=o<cr>",
-            desc = "show oat cmt in Telescope",
+            "<cmd>TodoTrouble keywords=oo<cr>",
+            desc = "show oat cmt in Trouble",
         },
     },
 
@@ -31,8 +46,8 @@ return {
         merge_keywords = true,
 
         keywords = {
-            o = { icon = "", color = "#505050" }, -- use 'o' + ':' to activate the keyword
-            -- o: this is a comment marked by "o"
+            oo = { icon = "", color = "#505050" }, -- use '# oo:' to activate the keyword
+            -- oo: this is a comment marked by "oo"
 
             -- FIX = {
             --     icon = " ", -- icon used for the sign, and in search results
