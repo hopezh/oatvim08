@@ -3,6 +3,8 @@ return {
 
     dependencies = { "nvim-lua/plenary.nvim" },
 
+    version = "*", -- ensure using the latest version
+
     keys = {
         -- {
         --     "<leader>xO",
@@ -33,7 +35,7 @@ return {
 
         {
             "<leader>zot",
-            "<cmd>TodoTrouble keywords=oo<cr>",
+            "<cmd>TodoTrouble keywords=oo cwd=false<cr>",
             desc = "show oat cmt in Trouble",
         },
     },
