@@ -5,6 +5,8 @@ return {
 
     version = "*", -- ensure using the latest version
 
+    optional = true,
+
     keys = {
         -- {
         --     "<leader>xO",
