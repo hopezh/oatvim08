@@ -2,7 +2,7 @@ import bpy
 import numpy as np
 import torch
 
-# -- torch ---------------------------------------------------------------------
+# oo: -- torch ---------------------------------------------------------------------
 if torch.backends.mps.is_available():
     mps_device = torch.device("mps")
     x = torch.ones(1, device=mps_device)
@@ -10,11 +10,11 @@ if torch.backends.mps.is_available():
 else:
     print("MPS device not found.", "\n")
 
-# -- numpy ---------------------------------------------------------------------
+# oo: -- numpy ---------------------------------------------------------------------
 a = np.arange(15).reshape(3, 5)
 print("np array a:\n", a, "\n")
 
-# -- bpy -----------------------------------------------------------------------
+# oo: -- bpy -----------------------------------------------------------------------
 bpy.ops.mesh.primitive_cube_add(size=1)
 
 cube_obj = bpy.context.active_object

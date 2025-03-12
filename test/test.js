@@ -3,12 +3,12 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 
 /**
- * Base
+ * TODO: Base
  */
-// Canvas
+// oo: Canvas
 const canvas = document.querySelector('canvas.webgl')
 
-// Scene
+// oo: Scene
 const scene = new THREE.Scene()
 
 /**
