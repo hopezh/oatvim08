@@ -22,7 +22,7 @@ return {
                 "java",
                 "javascript",
                 "julia",
-                "latex",
+                -- "latex",
                 "lua",
                 "luadoc",
                 "luap",
