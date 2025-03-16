@@ -1,7 +1,7 @@
 -- toggle dark/light theme -----------------------------------------------------
 -- [thanks kkafar](https://github.com/folke/tokyonight.nvim/discussions/426#discussioncomment-7102103)
 
-local function toggle_theme()
+local function toggle_mode()
     if vim.opt.background:get() == "dark" then
         vim.opt.background = "light"
     -- vim.cmd("colorscheme tokyonight-day")
@@ -14,7 +14,7 @@ end
 -- stylua: ignore
 vim.keymap.set(
     "n",
-    "<leader>zt",
-    toggle_theme,
-    { desc = "Toggle dark/light theme" }
+    "<leader>zm",
+    toggle_mode,
+    { desc = "Toggle mode btw dark/light" }
 )
