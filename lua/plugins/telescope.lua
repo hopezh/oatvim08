@@ -1,6 +1,19 @@
 return {
     "nvim-telescope/telescope.nvim",
 
+    keys = {
+        {
+            "<leader>ma",
+            "<cmd>Telescope vim_bookmarks all<cr>",
+            desc = "Show all bookmarks in Telescope",
+        },
+        {
+            "<leader>mc",
+            "<cmd>Telescope vim_bookmarks current_file<cr>",
+            desc = "Show bookmarks in current file in Telescope",
+        },
+    },
+
     opts = {
         -- change some default options
         defaults = {

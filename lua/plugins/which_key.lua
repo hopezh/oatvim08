@@ -28,6 +28,7 @@ return {
         wk.add({
             { "g", group = "+goto" },
             { "z", group = "+fold" },
+            { "m", group = "+bookmark" },
             { "ms", group = "+mini_surround" },
             { "<leader>q", group = "Quarto/Quit" },
             { "<leader>z", group = "OatKey" },
