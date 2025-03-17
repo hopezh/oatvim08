@@ -8,7 +8,8 @@ return {
             desc = "open neotree",
         },
         {
-            "<leader>tk",
+            -- "<leader>tk",
+            "<leader>e",
             "<cmd>Neotree filesystem reveal float<cr>",
             desc = "open neotree",
         },
