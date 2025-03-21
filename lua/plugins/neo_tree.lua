@@ -48,10 +48,9 @@ return {
         },
 
         window = {
-            -- position = "float", -- opts: left, right, float
-            position = "right", -- opts: left, right, float
+            position = "float", -- opts: left, right, float
             popup = { -- settings that apply to float position only
-                size = { height = "60", width = "100" },
+                size = { height = "40", width = "90" },
                 position = "50%", -- 50% means center it
             },
         },
