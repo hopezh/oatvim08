@@ -81,6 +81,7 @@ return {
                     {
                         cwd = dir,
                         query = vim.fn.expand("%:t"),
+                        multiline = false,
                     }
                 )
             end,
