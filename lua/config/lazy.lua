@@ -56,3 +56,7 @@ require("lazy").setup({
         },
     },
 })
+
+-- -- show diagnostic as virtual lines for current line only
+-- -- source: [3:13] https://www.youtube.com/watch?v=ZiH59zg59kg
+vim.diagnostic.config({ virtual_lines = { current_line = true } })
