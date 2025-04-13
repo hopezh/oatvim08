@@ -16,5 +16,9 @@ return {
         float = {
             relative = "editor",
         },
+
+        filter_kind = {
+            "Variable",
+        },
     },
 }
