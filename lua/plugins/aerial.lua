@@ -16,21 +16,5 @@ return {
         float = {
             relative = "editor",
         },
-
-        filter_kind = false, -- show evertyhing
-
-        -- filter_kind = {
-        --     "Class",
-        --     "Constant",
-        --     "Constructor",
-        --     "Enum",
-        --     "Function",
-        --     "Interface",
-        --     "Module",
-        --     "Method",
-        --     "Property",
-        --     "Struct",
-        --     "Variable",
-        -- },
     },
 }
