@@ -26,3 +26,7 @@ cube_obj.location.y = 5
 cube_obj.location.z = 5
 
 print("bpy cube obj:", cube_obj)
+
+
+def add(a, b):
+    return a + b
