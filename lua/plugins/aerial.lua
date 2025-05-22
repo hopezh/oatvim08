@@ -17,16 +17,20 @@ return {
             relative = "editor",
         },
 
-        filter_kind = {
-            "Class",
-            "Constructor",
-            "Enum",
-            "Function",
-            "Interface",
-            "Module",
-            "Method",
-            "Struct",
-            "Variable",
-        },
+        filter_kind = false, -- show evertyhing
+
+        -- filter_kind = {
+        --     "Class",
+        --     "Constant",
+        --     "Constructor",
+        --     "Enum",
+        --     "Function",
+        --     "Interface",
+        --     "Module",
+        --     "Method",
+        --     "Property",
+        --     "Struct",
+        --     "Variable",
+        -- },
     },
 }
