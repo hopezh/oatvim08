@@ -33,6 +33,7 @@ return {
             { "<leader>z", group = "OatKey" },
             { "<leader>zm", "<cmd>CellularAutomaton make_it_rain<CR>", desc = "make it rain..." },
             { "<leader>zg", "<cmd>CellularAutomaton game_of_life<CR>", desc = "game of life..." },
+            { "<leader>uP", "<cmd>Precognition toggle<CR>", desc = "toggle precognition" },
         })
     end,
 }
