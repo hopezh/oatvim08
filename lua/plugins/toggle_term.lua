@@ -19,7 +19,7 @@ return {
     -- based on suggestion of perplexity
     config = function()
         require("toggleterm").setup({
-            direction = "vertical", -- vertical, horizontal, float, tab
+            direction = "horizontal", -- vertical, horizontal, float, tab
 
             size = function(term)
                 if term.direction == "horizontal" then
