@@ -91,7 +91,6 @@ return {
             Quarto_is_in_python_chunk = function()
                 require("otter.tools.functions").is_otter_language_context("python")
             end
-
             vim.cmd([[
                 let g:slime_dispatch_ipython_pause = 100
                 function SlimeOverride_EscapeText_quarto(text)
