@@ -29,6 +29,7 @@ return {
                 "markdown",
                 "markdown_inline",
                 "python",
+                "quarto",
                 "query",
                 "r",
                 "regex",
