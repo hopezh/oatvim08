@@ -20,10 +20,11 @@ return {
         {
             "s",
             mode = { "n", "x", "o" },
-            function()
-                require("flash").jump()
-            end,
-            desc = "Flash",
+            false, -- deactivate so as not to clash with neovim default keymap "s" for "subsititute"
+            -- function()
+            --     require("flash").jump()
+            -- end,
+            -- desc = "Flash",
         },
         {
             "S",
