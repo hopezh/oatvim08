@@ -1,6 +1,6 @@
 return {
     {
-        "echasnovski/mini.align",
+        "nvim-mini/mini.align",
 
         version = false,
 
@@ -15,7 +15,7 @@ return {
     },
 
     {
-        "echasnovski/mini.surround",
+        "nvim-mini/mini.surround",
 
         recommended = true,
 
